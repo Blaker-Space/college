@@ -1,0 +1,83 @@
+To setup your machine to run the frontend and the postgres server:
+
+** Open VS Code and open a bash shell **
+1. Open Visual Studio Code, press "CTRL + `" to open a terminal.
+
+2. Click on the down arrow icon at the top of your terminal window next to "+".
+
+3. Select "bash".
+
+
+
+** Update and install git **
+4. In your bash terminal, run "sudo apt update" and type in your password.
+
+5. In the same bash terminal, run "sudo apt install git", then run the command "git --version" to verify it installed correctly.
+
+
+
+** Navigate to your preferred directory and clone the Github repo **
+(If you already have the repo on a local device then transition to step 9)
+
+6. Run "ls" in the terminal, this stands for "list" and will show you the sub-folders of your current folder.
+
+7. navigate to the folder in which you want to clone the Github repository by typing "cd <folder-name>" 
+    where <folder-name> is the name of the sub-folder shown by running "ls".
+    7.1 The standard is to create a "repos" folder in your root folder by running "mkdir repos" and then run "cd repos" to enter it.
+
+8. run "git clone https://Github.com/BradBear19/Location-Based-Web-Crawler.git"
+    8.1 If prompted to enter name and email, enter in email associated with Github account.
+
+
+
+** Install Dependencies to get server to run **
+9. Run "cd Location-Based-Web-Crawler" in a newly created terminal to change directories to the Github repo you just cloned
+
+10. In the same temrinal, run "cd server" to enter the server directory
+
+11. In the same temrinal, run "npm i express pg cors" to install express.js, postgres, and cross-origin resource sharing, also run "npm install nodemon"
+
+12. In the same temrinal, run "nodemon index" inside of the "server" folder to start the server on your machine
+
+
+
+** Set up Database **
+14. Go to www.pgadmin.org, install pgadmin 4
+
+15. Open pgadmin 4, right-click on "Servers" in the left menu, select "Register", "Server..."
+
+16. Name it whatever you want in "General", go to "Connection", and set Host name to localhost and port to whatever port number you want to use (5432 should be good)
+
+17. Set Username and Password to whatever you want it to be (be sure to remember this!)
+
+18. Copy code found in server/sql-scripts/01-schema.sql, paste in pgadmin 4 and execute
+
+19. do the same as above for 02-indexes.sql
+
+** Set up .env file and populate with appropriate data **
+20. create a file in the "server" folder named ".env"
+
+21. copy the following and paste in your .env file:
+
+PGUSER=
+PGPASSWORD=
+PGHOST=localhost
+PGPORT=5432
+PGDATABASE=postgres
+
+23. next to PGUSER, type in the username you made in step 15
+
+24. for PGPASSWORD, type in your postgres password you made (if applicable)
+
+25. put localhost for PGHOST, the port you chose in 14 for PGPORT, and the name you chose in 14 for PGDATABASE
+
+
+
+** Set up client **
+26. Change directories to the "client" by opening a new bash terminal (same process as step 2 & 3) and running "cd Location-Based-Web-Crawler/client"
+
+27. Execute the command "run npm install" in the newly created bash terminal.
+
+28. run "npm start" to start the client. If you visit localhost:3000 on your web browser, you should see the front-end
+
+29. All set up! Add in data to your database from the front end as you please!

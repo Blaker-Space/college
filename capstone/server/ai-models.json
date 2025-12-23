@@ -1,0 +1,75 @@
+[
+  {
+    "id": "gpt-oss-20b-free",
+    "provider": "openrouter",
+    "label": "OpenAI GPT",
+    "model": "openai/gpt-oss-20b:free",
+    "envVar": "OPENROUTER_API_KEY",
+    "description": "Versatile GPT-OSS 20B model optimized for structured JSON extraction.",
+    "default": true
+  },
+  {
+    "id": "llama-3-2-3b-instruct",
+    "provider": "openrouter",
+    "label": "Meta LLaMA",
+    "model": "meta-llama/llama-3.2-3b-instruct:free",
+    "envVar": "OPENROUTER_API_KEY",
+    "description": "Meta's compact LLaMA 3.2 3B instruct model."
+  },
+  {
+    "id": "gemini-2-0-flash-exp",
+    "provider": "openrouter",
+    "label": "Google Gemini 2.0 Flash",
+    "model": "google/gemini-2.0-flash-exp:free",
+    "envVar": "OPENROUTER_API_KEY",
+    "description": "Google Gemini model for interactive tasks."
+  },
+  {
+    "id": "grok-4-1-fast",
+    "provider": "openrouter",
+    "label": "Grok 4.1 Fast",
+    "model": "x-ai/grok-4.1-fast",
+    "envVar": "OPENROUTER_API_KEY",
+    "description": "OpenRouter hosted Grok 4.1 Fast model for deep structured reasoning."
+  },
+  {
+    "id": "nemotron-nano-12b-v2-vl",
+    "provider": "openrouter",
+    "label": "NVIDIA Nemotron Nano",
+    "model": "nvidia/nemotron-nano-12b-v2-vl:free",
+    "envVar": "OPENROUTER_API_KEY",
+    "description": "NVIDIA's compact 12B vision-language model available via OpenRouter free tier."
+  },
+  {
+    "id": "glm-4-5-air",
+    "provider": "openrouter",
+    "label": "GLM 4.5 Air",
+    "model": "z-ai/glm-4.5-air:free",
+    "envVar": "OPENROUTER_API_KEY",
+    "description": "ZhipuAI GLM 4.5 Air model emphasizing grounded factual extraction."
+  },
+  {
+    "id": "mistral-small-3-2-24b-instruct",
+    "provider": "openrouter",
+    "label": "Mistral Small 3.2",
+    "model": "mistralai/mistral-small-3.2-24b-instruct:free",
+    "envVar": "OPENROUTER_API_KEY",
+    "description": "Latest Mistral Small 3.2 instruct release balanced for accuracy and cost."
+  },
+  {
+    "id": "mistral-small-3-1-24b-instruct",
+    "provider": "openrouter",
+    "label": "Mistral Small 3.1",
+    "model": "mistralai/mistral-small-3.1-24b-instruct:free",
+    "envVar": "OPENROUTER_API_KEY",
+    "description": "Prior Mistral Small 3.1 instruct release for regression comparisons."
+  },
+  {
+    "id": "mistral-7b-instruct",
+    "provider": "openrouter",
+    "label": "Mistral",
+    "model": "mistralai/mistral-7b-instruct:free",
+    "envVar": "OPENROUTER_API_KEY",
+    "description": "Lightweight Mistral 7B instruct model for latency-sensitive scraping jobs."
+  }
+]
