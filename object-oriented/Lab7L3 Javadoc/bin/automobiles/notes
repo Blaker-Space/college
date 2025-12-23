@@ -1,0 +1,87 @@
+//1.
+int x = 5;
+int y = 12;
+int width = y + x / 4;
+What is the result?
+
+*13
+
+//2. Two out of the following eight:
+Explain differences between compiled, interpreted languages, and Java
+Compiled language: whole document is compiled into machine language and the entire document
+is ran at once.
+Interpreted language: Each line is interpreted and then executed individually.
+Java: Compiled into Bytecode, which is interpreted and executed for that machine at runtime.
+
+
+Explain the three types of errors that may be found in code. Include causes and how/when
+errors are found.
+*Syntax error/compiler error: "Broke the rules of Java" leaving out a semicolon. Found at compile time
+*Runtime error: Some sort of input that is invalid (expecting an integer, receive  a string). Divide by 0.
+Reading outside of the bounds of an array.
+*Logic error: The results produced are incorrect (i.e. an "if" statement that uses < instead of >).
+
+
+What is pseudocode and when/how should it be used in the software development process?
+Fake code/approximation for code. Used when creating an outline for your code.
+
+
+What is the JVM? How does it work?
+Stands for Java Virtual Machine. It interprets the bytecode that has been compiled
+
+
+What are the characteristics of a high-level language?
+Looks like human language and algebra instead of machine language. High-level languages are machine-independent
+
+
+What are the four different ways that the flow of control can progress through a program?
+Sequence: Do this until I reach a ;, then do the next until ;, etc.
+Selection: Choose between one branch and another branch (used with if, else, and switch statements)
+Repetition: Repeat a series of commands while a certain condition is true.
+Functions/Methods: When a function call occurs, it skips down, performs the function, and then comes back
+
+
+//3. Two out of the following four:
+
+How does an object encapsulate data? (protect from outside world)
+By making fields private so nobody can access them, but using public getters and setters to access and set the data.
+
+
+What is the purpose of mutator methods? How should mutator methods be named?
+To set private fields. 
+They are named by using the word "set" and then the field it is setting (i.e. setNumberOfHuskies)
+Takes the same datatype as the variable it is setting
+
+What is the purpose of constructors? What are the naming rules for constructors?
+To create a new object, and put it in a valid state. Must be named the exact same way as the class.
+
+
+What is the purpose of accessor methods? How should accessor methods be named?
+To read private data from fields. It should be named using "get" and then the field you are reading (i.e. getNumberOfHuskies)
+
+
+//6. Create the two mutator methods:
+public class Theater
+{
+private int attendance;
+private String roomNumber;
+
+//overloaded constructor
+
+//accessors (get methods)
+
+//mutators (set methods)
+public void setAttendance(int attendance){
+	if(attendance < 15 || attendance > 150)
+		this.attendance = 20;
+	else
+		this.attendance = attendance;
+}
+
+public void setRoomNumber(String roomNumber){
+	this.roomNumber = roomNumber;
+}
+//other methods
+}
+
+

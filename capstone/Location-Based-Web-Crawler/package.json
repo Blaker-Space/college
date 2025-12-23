@@ -1,0 +1,37 @@
+{
+  "name": "location-based-web-crawler",
+  "version": "1.0.0",
+  "description": "Location based web crawler for Capstone designed to scrape company buisness data off websites.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BradBear19/Location-Based-Web-Crawler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BradBear19/Location-Based-Web-Crawler/issues"
+  },
+  "homepage": "https://github.com/BradBear19/Location-Based-Web-Crawler#readme",
+  "dependencies": {
+    "@clerk/clerk-react": "^5.56.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "i": "^0.3.7",
+    "node": "^25.2.1",
+    "nodemon": "^3.1.11",
+    "openai": "^6.8.0",
+    "pg": "^8.16.3",
+    "postgres": "^3.4.7",
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.17"
+  }
+}
